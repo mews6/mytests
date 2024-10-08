@@ -16,11 +16,11 @@ class Like extends Component {
   render() {
     return (
       <div>
-        <p>Likes: {this.state.likes}</p>
-        <button id="increment" onClick={this.handleIncrement}>
+        <p data-testid="likeNumber">Likes: {this.state.likes}</p>
+        <button data-testid = "increment" id="increment" onClick={this.handleIncrement}>
           Like
         </button>
-        <button id="decrement" onClick={this.handleDecrement}>
+        <button data-testid = "decrement" id="decrement" onClick={this.handleDecrement}>
           {" "}
           Dislike
         </button>
